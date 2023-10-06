@@ -1,7 +1,7 @@
 name: 'RepoCreate'
 description: 'Just a test for now'
 inputs:
-  github-response:
+  Response:
     description: 'What to echo'
     required: true
 outputs:
@@ -11,5 +11,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.github-response }}
-    - ${{ inputs.github-repo-name }}
+    - ${{ inputs.Response }}
