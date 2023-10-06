@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/powershell:lts-ubuntu-jammy
 
-ARG Response = 'default phrase'
+ARG Response='default phrase'
 
 WORKDIR /app
 
