@@ -1,0 +1,15 @@
+name: 'RepoCreate'
+description: 'Just a test for now'
+inputs:
+  github-response:
+    description: 'What to echo'
+    required: true
+outputs:
+  github-repo-url:  
+    description: 'The url of the newly created repo'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.github-response }}
+    - ${{ inputs.github-repo-name }}
