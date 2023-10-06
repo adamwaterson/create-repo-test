@@ -6,6 +6,4 @@ WORKDIR /app
 
 COPY ./Create-Repo.ps1 .
 
-ENTRYPOINT [ "pwsh" ]
-
-CMD ["pwsh","Create-Repo.ps1"]
+ENTRYPOINT [ "pwsh", "-Command", "Create-Repo.ps1" ]
