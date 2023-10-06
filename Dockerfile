@@ -4,6 +4,6 @@ ARG Response='default phrase'
 
 WORKDIR /app
 
-COPY ./Create-Repo.ps1 .
+COPY ./Create-Repo.ps1 /app
 
-ENTRYPOINT [ "pwsh", "-Command", "Create-Repo.ps1" ]
+ENTRYPOINT [ "pwsh", "-Command", "/app/Create-Repo.ps1" ]
