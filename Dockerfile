@@ -8,4 +8,4 @@ COPY ./Create-Repo.ps1 .
 
 ENTRYPOINT [ "pwsh" ]
 
-CMD ["Create-Repo.ps1"]
+CMD ["pwsh","Create-Repo.ps1"]
