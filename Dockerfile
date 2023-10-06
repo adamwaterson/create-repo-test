@@ -5,5 +5,5 @@ ENV Response='default phrase'
 WORKDIR /app
 
 COPY ./Create-Repo.ps1 /app
-
-CMD [ "pwsh", "-Command", "/app/Create-Repo.ps1", "-Response Hello" ]
+ENTRYPOINT [ "pwsh" ]
+CMD [ "/app/Create-Repo.ps1", "-Response Hello" ]
