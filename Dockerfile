@@ -8,4 +8,4 @@ COPY ./Create-Repo.ps1 /app
 
 # SHELL [ "pwsh", "-Command" ]
 # CMD /app/Create-Repo.ps1 -Response ($Env:INPUT_RESPONSE)
-ENTRYPOINT [ "pwsh", "-File", "/app/Create-Repo.ps1", "-Response ($Env:INPUT_RESPONSE)" ]
+ENTRYPOINT [ "pwsh", "-File", "/app/Create-Repo.ps1", "-Response ${INPUT_RESPONSE}" ]
