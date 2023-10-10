@@ -9,6 +9,6 @@ outputs:
     description: 'The url of the newly created repo'
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'docker.io/action/create-repo-test:0.0.1'
   args:
     - ${{ inputs.Response }}
